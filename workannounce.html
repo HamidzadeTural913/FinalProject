@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Elanlari</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/scss/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+        <div class="container">
+         <div class="row">
+             <div class="col-lg-2">
+                 <div class="mainlogo">
+                     <img src="./assets/images/staffyLogo.svg" alt="">
+                 </div>
+             </div>
+             <div class="col-lg-7">
+                 <div class="nav_list">
+                     <ul id="burgernav" >
+                         <li><a href="workannounce.html">İş elanları</a></li>
+                         <li><a href="worksearcher.html">İş axtaranlar</a></li>
+                         <li><a href="">Şirkətlər</a></li>
+                         <li><a href="blog.html"> Bloq</a></li>
+                         <li><a href="about2.html"> Haqqımızda</a></li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="col-lg-3">
+                 <div class="items_nav">
+                     <div class="azerb">
+                         <span><svg id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="28" height="28" style="margin-right: 6px;"><path d="M512,256c0-31.314-5.632-61.311-15.923-89.043L256,155.826l-240.077,11.13 C5.633,194.689,0,224.686,0,256s5.633,61.311,15.923,89.043L256,356.174l240.077-11.13C506.368,317.311,512,287.314,512,256z" style="fill: rgb(216, 0, 39);"></path>
+                             <path d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z" style="fill: rgb(109, 165, 68);"></path><path d="M15.923,166.957h480.155C459.906,69.472,366.071,0,256,0S52.094,69.472,15.923,166.957z" style="fill: rgb(51, 138, 243);"></path>
+                             <g><path d="M261.565,328.348c-39.956,0-72.348-32.392-72.348-72.348s32.392-72.348,72.348-72.348 c12.458,0,24.181,3.15,34.415,8.696c-16.056-15.701-38.012-25.392-62.241-25.392c-49.178,0-89.043,39.866-89.043,89.043 s39.866,89.043,89.043,89.043c24.23,0,46.186-9.691,62.241-25.392C285.746,325.198,274.023,328.348,261.565,328.348z" style="fill: rgb(240, 240, 240);"></path>
+                                 <polygon points="317.217,205.913 326.8,232.864 352.634,220.582 340.353,246.416 367.304,256  340.353,265.584 352.634,291.418 326.8,279.136 317.217,306.087 307.635,279.136 281.8,291.418 294.082,265.584 267.13,256  294.082,246.416 281.8,220.582 307.635,232.864  " style="fill: rgb(240, 240, 240);"></polygon></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span><a href="">AZ</a>
+                     </div>
+                     <div class="darkmod">  
+                         <i class="fa-solid fa-moon"></i>
+                     </div>
+                     <div class="login">
+                         <button><a href="">Giriş</a></button>
+                     </div>
+                     <div class="burger">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                           </svg>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+        </div>
+     </header>
+    <main>
+        <section id="accardion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul>
+                            <li>
+                                <div class="accardion_item"> 
+                                    <div class="accardion-input">
+                                        <input type="text" placeholder="Vakansiya və ya şirkət adı">
+                                        <div class="itemabsolute">
+                                             <span class="accardion_data">Ətraflı<i class="fa-solid fa-chevron-down"></i></span>
+                                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="accardion-form">
+                                  <form action="">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="label1">
+                                    <label for="Vakansiya axtarışı">Vakansiya axtarışı</label> <br>
+                                    <input class="text1" type="text" placeholder="Vakansiya və ya şirkət adı">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="label2">
+                                                    <label for="Təcrübə">Təcrübə</label> <br>
+                                                    <select class="section1">
+                                                        <option value=""></option>
+                                                        <option value="Təcrübəsiz">Təcrübəsiz</option>
+                                                        <option value="1 ildən az">1 ildən az</option>
+                                                        <option value=" 1 ildən 3 ilə">1 ildən 3 ilə</option>
+                                                        <option value="3 ildən 6 ilə">3 ildən 6 ilə</option>
+                                                        <option value="6 ildən çox">6 ildən çox</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="label3">
+                                <label for="Yaş">Yaş</label> <br>
+                                <input class="age" type="tel" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="label4">
+                                                    <label for="Bölgə">Bölgə</label> <br>
+                                                    <input class="bolge" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="label5">
+                                                    <label for="Kateqoriya">Kateqoriya</label> <br>
+                                                    <select class="category" name="" id="">
+                                                        <option value=""></option>
+                                                        <option value="">İnzibati</option>
+                                                        <option value="">Malliyə</option>
+                                                        <option value="">Satış</option>
+                                                        <option value=""> İnformasiya texnologiyaları</option>
+                                                        <option value="">Marketinq</option>
+                                                        <option value=""> Tibb və Əzcaçılıq</option>
+                                                        <option value="">Nəqliyyat</option>
+                                                        <option value="">İncəsənət və Dizayn</option>
+                                                        <option value="">Təhsil və Təlim</option>
+                                                        <option value="">Digər</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="label6">
+                                                    <label for="Şirkət">Şirkət</label> <br>
+                                                    <input class="wirket" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="label7">
+                                                    <label for="Əmək haqqı">Əmək haqqı</label> <br>
+                                                    <input type="range" class="range" name="" id="">
+                                                </div>
+                                            </div> 
+                                            <div class="col-lg-4">
+                                                <div class="label8">
+                                                    <div class="maaw">
+                                                        <div class="maawbutton">
+                                                            <div class="form-check form-switch">
+                                                                <label class="form-check-label" for="flexSwitchCheckDefault">Maaş olmayan elanları göstər</label>
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="asanmuraciyet">
+                                                        <div class="asanmuraciyetbutton">
+                                                            <div class="form-check form-switch">
+                                                                <label class="form-check-label" for="flexSwitchCheckDefault">Yalnız asan müraciət</label>
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="is-elanlari">
+            <div class="container">
+                <div class="cards row">
+                    <div class="card-item col-lg-4">
+                        <div class="head row">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Vəkil köməkçisi</a></h5>
+                            <p><a href="">  Azerbaijanfirsttravel</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>300 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>   
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">Dünən</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Bağban</a></h5>
+                            <p><a href=""> AzəriMed QSC</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>600 - 800 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">Dünən</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Kredit mütəxəssisi</a></h5>
+                            <p><a href="">Aplusglobal MMC</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>400 Azn</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">Dünən</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Xadimə</a></h5>
+                            <p><a href="">Benna Group.MMC</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>300 - 400  AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">Dünən</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Официант</a></h5>
+                            <p><a href=""> Ресторан Солоха</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>400 - 600 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">Dünən</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Resepşn</a></h5>
+                            <p><a href="">Gəncəli Plaza</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>400-500 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">Dünən</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Satış məsləhətçisi</a></h5>
+                            <p><a href="">İdeal MMC</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>400-600 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Korporativ Satış Mütəxəssisi</a></h5>
+                            <p><a href="">Selection Gallery</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i> 600 - 1100 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Logisik Operator</a></h5>
+                            <p><a href="">Logist MMC</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>500 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Company Logo</a></h5>
+                            <p><a href="">Xarici satınalmalar üzrə mütəxəssis
+                                HR-PORT</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>1200 - 1400 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href="">Anbardar</a></h5>
+                            <p><a href=""> KHALCHA restoran</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>600 - 800 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Mid. Back-End Developer</a></h5>
+                            <p><a href="">eiLink R&D Center</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>1500 - 2000 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Merçendayzer qrupunun rəhbəri</a></h5>
+                            <p><a href="">AZFP Co. LTD / Milla</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>1000 - 1200 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/dentist.png" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Flutter developer</a></h5>
+                            <p><a href="">Azəri Ekspress MMM</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>1000 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+                    <div class="card-item col-lg-4">
+                        <div class="head row ">
+                            <div class="img col-lg-3">
+                                <img src="./assets/images/ev.jpg" alt="">
+                            </div>
+                           <div class="title col-lg-7">
+                            <h5><a href=""> Qrafik dizayner </a></h5>
+                            <p><a href="">  Allprint</a></p>
+                           </div>
+                           <div class="icon col-lg-2">
+                            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                           </div>
+                        </div>
+                        <div class="main mt-3">
+                            <ul>
+                                <li class="main-1"><a href=""><i class="fa-solid fa-wallet"></i>700 - 900 AZN</a></li>
+                                <li class="main-2"><a href="">Yeni</a></li>
+                                <!-- <li class="main-3"><a href=""><i class="fa-solid fa-briefcase"></i>Tam Stat</a></li>
+                                <li class="main-4"><a href=""><i class="fa-solid fa-angles-right"></i>Asan Muraciet</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="end mt-3">
+                            <span><a href="">2 gün əvvəl</a></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-vacation-show mt-5">
+                    <button><a href="">Bütün vakansiyaları göstər</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="lists">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3">
+                <div class="list">
+                    <ul>
+                        <p>İş axtaranlar üçün</p>
+                        <li><a href="">Vakansiyalar</a></li>
+                        <li><a href="">CV əlavə et</a></li>
+                        <li><a href="">Yadda saxladıqlarım</a></li>
+                        <li><a href="">İş axtaran kimi qeydiyyatdan keç</a></li>
+                    </ul>
+                </div>
+             </div>
+            <div class="col-lg-3">
+                        <div class="list">
+                            <ul>
+                                <p>İşə götürənlər üçün</p>
+                                <li><a href="">Vakansiya yarat</a></li>
+                                <li><a href="">Planlar & Qiymətlər</a></li>
+                                <li><a href="">İşə götürən kimi qeydiyatdan keç</a></li>
+                            </ul>
+                        </div>
+            </div>
+            <div class="col-lg-3">
+                                <div class="list">
+                                    <ul>
+                                        <p>Faydalı linklər</p>
+                                        <li><a href="">Məxfilik siyasəti</a></li>
+                                        <li><a href="">İstifadə qaydaları</a></li>
+                                    </ul>
+                                </div>
+            </div>
+            <div class="col-lg-3">
+                                <div class="list">
+                                    <ul>
+                                        <p>Əlaqə</p>
+                                        <li><a href="">+994 55 442 91 93</a></li>
+                                        <li><a href="">info@staffy.az</a></li>
+                                    </ul>
+                                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+     <section id="lists2">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="logo1">
+                <img src="./assets/images/staffyLogo.svg" alt=""> <span>© Staffy LLC. 2021</span>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+            <div class="icons1">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-location-arrow"></i></a></li>
+                    <li><span><svg id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="28" height="28" style="margin-right: 6px;"><path d="M512,256c0-31.314-5.632-61.311-15.923-89.043L256,155.826l-240.077,11.13 C5.633,194.689,0,224.686,0,256s5.633,61.311,15.923,89.043L256,356.174l240.077-11.13C506.368,317.311,512,287.314,512,256z" style="fill: rgb(216, 0, 39);"></path><path d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z" style="fill: rgb(109, 165, 68);"></path><path d="M15.923,166.957h480.155C459.906,69.472,366.071,0,256,0S52.094,69.472,15.923,166.957z" style="fill: rgb(51, 138, 243);"></path><g><path d="M261.565,328.348c-39.956,0-72.348-32.392-72.348-72.348s32.392-72.348,72.348-72.348 c12.458,0,24.181,3.15,34.415,8.696c-16.056-15.701-38.012-25.392-62.241-25.392c-49.178,0-89.043,39.866-89.043,89.043 s39.866,89.043,89.043,89.043c24.23,0,46.186-9.691,62.241-25.392C285.746,325.198,274.023,328.348,261.565,328.348z" style="fill: rgb(240, 240, 240);"></path><polygon points="317.217,205.913 326.8,232.864 352.634,220.582 340.353,246.416 367.304,256  340.353,265.584 352.634,291.418 326.8,279.136 317.217,306.087 307.635,279.136 281.8,291.418 294.082,265.584 267.13,256  294.082,246.416 281.8,220.582 307.635,232.864  " style="fill: rgb(240, 240, 240);"></polygon></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span><a href="">Azərbaycanca</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </div>
+     </section>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/scss/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>blog</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+        <div class="container">
+         <div class="row">
+             <div class="col-lg-2">
+                 <div class="mainlogo">
+                     <img src="https://staffy.az/static/media/staffy-logo-black.6d8e2b3f.svg" alt="">
+                 </div>
+             </div>
+             <div class="col-lg-7">
+                 <div class="nav_list">
+                     <ul id="burgernav" >
+                         <li><a href="workannounce.html">İş elanları</a></li>
+                         <li><a href="worksearcher.html">İş axtaranlar</a></li>
+                         <li><a href="">Şirkətlər</a></li>
+                         <li><a href="blog.html"> Bloq</a></li>
+                         <li><a href="about.html"> Haqqımızda</a></li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="col-lg-3">
+                 <div class="items_nav">
+                     <div class="azerb">
+                         <span><svg id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="28" height="28" style="margin-right: 6px;"><path d="M512,256c0-31.314-5.632-61.311-15.923-89.043L256,155.826l-240.077,11.13 C5.633,194.689,0,224.686,0,256s5.633,61.311,15.923,89.043L256,356.174l240.077-11.13C506.368,317.311,512,287.314,512,256z" style="fill: rgb(216, 0, 39);"></path>
+                             <path d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z" style="fill: rgb(109, 165, 68);"></path><path d="M15.923,166.957h480.155C459.906,69.472,366.071,0,256,0S52.094,69.472,15.923,166.957z" style="fill: rgb(51, 138, 243);"></path>
+                             <g><path d="M261.565,328.348c-39.956,0-72.348-32.392-72.348-72.348s32.392-72.348,72.348-72.348 c12.458,0,24.181,3.15,34.415,8.696c-16.056-15.701-38.012-25.392-62.241-25.392c-49.178,0-89.043,39.866-89.043,89.043 s39.866,89.043,89.043,89.043c24.23,0,46.186-9.691,62.241-25.392C285.746,325.198,274.023,328.348,261.565,328.348z" style="fill: rgb(240, 240, 240);"></path>
+                                 <polygon points="317.217,205.913 326.8,232.864 352.634,220.582 340.353,246.416 367.304,256  340.353,265.584 352.634,291.418 326.8,279.136 317.217,306.087 307.635,279.136 281.8,291.418 294.082,265.584 267.13,256  294.082,246.416 281.8,220.582 307.635,232.864  " style="fill: rgb(240, 240, 240);"></polygon></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span><a href="">AZ</a>
+                     </div>
+                     <div class="darkmod">  
+                         <i class="fa-solid fa-moon"></i>
+                     </div>
+                     <div class="login">
+                         <button><a href="">Giriş</a></button>
+                     </div>
+                     <div class="burger">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                           </svg>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+        </div>
+     </header>
+    <main>
+        <section id="blog-searcher">
+          <div class="container">
+           <div class="row">
+            <div class="col-lg-12">
+                <div class="starter-search">
+                    <input type="text" placeholder="Başlıq">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+           </div>
+           <div class="blog-article mt-3 ms-2">
+             <p>19 məqalə tapıldı</p>
+           </div>
+          </div>
+        </section>
+        <section id="blog-cards">
+            <div class="container">
+                <div class="row mt-5">
+                       <div class="col-lg-4">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/c9739483-cbbd-41f1-aca8-a12fd069bd64.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-4">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/b24d131f-59a6-46cc-8877-6a973d30985c.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>July 29</p>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-4">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/d187ccdd-49ca-40a1-ac17-2b27faa9a245.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>September 26</p>
+                            </div>
+                        </div>
+                       </div>   
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/df1bb0bb-9eed-484e-901d-02728e5e989f.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>September 10</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/7073c179-d896-4e48-a801-f582e0b286cb.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>June 25</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/05c74cdb-fa8e-485a-aa5b-60391cd87394.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 19</p>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/7c144cab-a964-4f3d-849b-1818b3560415.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>May 08</p>
+                            </div>
+                        </div>
+                       </div>  
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/c02a8ad7-f6d6-48c7-9a7e-2d7210c0efdd.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>April 27</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">  
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/8087c3d4-ecfd-4b2a-acba-9ab69eac789a.jpg" alt="" srcset="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>March 11</p>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/192b0c55-d538-4e8d-b41b-00d8b629174c.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/bd637297-58b5-46cf-848a-02fc64a9d36c.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/7bd877f6-b94a-4de0-80a2-9ec1c9de49d3.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/84cdbd04-3f4e-4599-9f23-8b90cd12a0b8.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/97723d60-cf08-4a53-837e-af0a9bf61b11.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/5b810e41-5deb-46ec-be3c-e24e660ffa7b.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/6f75110a-a074-45fd-a337-d15c477b715c.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/7a20845c-c663-4c57-abbf-1a7c41f55381.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                       <div class="col-lg-4 mt-3">
+                        <div class="blog-card">
+                            <div class="img-blog">
+                                <img src="https://s3.mediusoft.com/staffy/post-media/7a20845c-c663-4c57-abbf-1a7c41f55381.jpg" alt="">
+                            </div>
+                            <div class="blog-title">
+                                <h4>Sosial şəbəkə hesabınızın karyeranıza təsiri</h4>
+                            </div>
+                            <div class="blog-subtitle">
+                                <p>Sosial şəbəkələr demək olar ki, həyatımızın bir hissəsinə çevrilib. İnsanlar öz
+                                    fotoşəkilləri ilə birlikdə gəzdikləri, düşündükləri, hiss etdikləri hər şeyi
+                                    sosial şəbəkə hesablarında olur.</p>
+                            </div>
+                            <div class="date-blog">
+                                <p>August 06</p>
+                            </div>
+                        </div>
+                       </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="lists">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3">
+                <div class="list">
+                    <ul>
+                        <p>İş axtaranlar üçün</p>
+                        <li><a href="">Vakansiyalar</a></li>
+                        <li><a href="">CV əlavə et</a></li>
+                        <li><a href="">Yadda saxladıqlarım</a></li>
+                        <li><a href="">İş axtaran kimi qeydiyyatdan keç</a></li>
+                    </ul>
+                </div>
+             </div>
+            <div class="col-lg-3">
+                        <div class="list">
+                            <ul>
+                                <p>İşə götürənlər üçün</p>
+                                <li><a href="">Vakansiya yarat</a></li>
+                                <li><a href="">Planlar & Qiymətlər</a></li>
+                                <li><a href="">İşə götürən kimi qeydiyatdan keç</a></li>
+                            </ul>
+                        </div>
+            </div>
+            <div class="col-lg-3">
+                                <div class="list">
+                                    <ul>
+                                        <p>Faydalı linklər</p>
+                                        <li><a href="">Məxfilik siyasəti</a></li>
+                                        <li><a href="">İstifadə qaydaları</a></li>
+                                    </ul>
+                                </div>
+            </div>
+            <div class="col-lg-3">
+                                <div class="list">
+                                    <ul>
+                                        <p>Əlaqə</p>
+                                        <li><a href="">+994 55 442 91 93</a></li>
+                                        <li><a href="">info@staffy.az</a></li>
+                                    </ul>
+                                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+     <section id="lists2">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="logo1">
+                <img src="./assets/images/staffyLogo.svg" alt=""> <span>© Staffy LLC. 2021</span>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+            <div class="icons1">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-location-arrow"></i></a></li>
+                    <li><span><svg id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" width="28" height="28" style="margin-right: 6px;"><path d="M512,256c0-31.314-5.632-61.311-15.923-89.043L256,155.826l-240.077,11.13 C5.633,194.689,0,224.686,0,256s5.633,61.311,15.923,89.043L256,356.174l240.077-11.13C506.368,317.311,512,287.314,512,256z" style="fill: rgb(216, 0, 39);"></path>
+                        <path d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z" style="fill: rgb(109, 165, 68);"></path><path d="M15.923,166.957h480.155C459.906,69.472,366.071,0,256,0S52.094,69.472,15.923,166.957z" style="fill: rgb(51, 138, 243);"></path>
+                        <g><path d="M261.565,328.348c-39.956,0-72.348-32.392-72.348-72.348s32.392-72.348,72.348-72.348 c12.458,0,24.181,3.15,34.415,8.696c-16.056-15.701-38.012-25.392-62.241-25.392c-49.178,0-89.043,39.866-89.043,89.043 s39.866,89.043,89.043,89.043c24.23,0,46.186-9.691,62.241-25.392C285.746,325.198,274.023,328.348,261.565,328.348z" style="fill: rgb(240, 240, 240);"></path><polygon points="317.217,205.913 326.8,232.864 352.634,220.582 340.353,246.416 367.304,256  340.353,265.584 352.634,291.418 326.8,279.136 317.217,306.087 307.635,279.136 281.8,291.418 294.082,265.584 267.13,256  294.082,246.416 281.8,220.582 307.635,232.864  " style="fill: rgb(240, 240, 240);"></polygon></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span><a href="">Azərbaycanca</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </div>
+     </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/js/scripnt.js"></script>
+</body>
+</html>
